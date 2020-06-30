@@ -1,0 +1,353 @@
+/* Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+
+/* Global */
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+.affix {
+  top: 20px;
+  z-index: 999 !important;
+}
+body {
+  background-color: #fff;
+}
+.breadcrumb {
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 8px;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.breadcrumb .breadcrumb-item a {
+  text-decoration: none;
+  color: rgb(20, 71, 122);
+}
+.breadcrumb .breadcrumb-item a:hover {
+  font-weight: 600;
+}
+.btn-custom {
+  border-radius: 0;
+  background-color: rgb(243, 200, 4);
+  color: rgb(20, 71, 122);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.btn-custom:hover {
+  color: rgb(15, 54, 94);
+  background-color: rgb(250, 206, 10);
+}
+.heading {
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(20, 71, 122);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+}
+/* Navbar */
+.bahasa {
+  padding-left: 6px;
+  border-left: solid thin rgb(217, 179, 5);
+}
+header.main-header {
+  position: relative;
+}
+.logo-pens img {
+  height: 75px;
+}
+.mainNav {
+  background-color: rgb(20, 71, 122);
+  box-shadow: 0 4px 7px 2px rgba(0, 0, 0, 0.2);
+  height: 55px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.mainNav li.nav-item {
+  padding: 0 6px;
+}
+.mainNav li.nav-item a {
+  color: #ddd;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+}
+.mainNav li.nav-item.submission a {
+  color: rgb(243, 200, 4);
+  font-weight: 700;
+}
+.mainNav .navbar-brand img {
+  height: 39px;
+}
+.topnav {
+  background-color: rgb(243, 200, 4);
+  height: 35px;
+}
+.topnav li.nav-item a {
+  color: #333;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+}
+.topnav li:nth-child(4) {
+  padding-right: 6px;
+}
+/* end of Navbar */
+
+/* Carousel */
+.carousel-item {
+  height: calc(100vh - 90px);
+  position: relative;
+  text-shadow: 2px 2px 4px #333;
+  transition: transform 2s ease, opacity 0.5s ease-out;
+}
+
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 100px 0px rgba(0, 0, 0, 0.5) inset;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+/* end of Carousel */
+
+/* Sections */
+section.beranda {
+  padding: 32px 0;
+}
+section.akademik .card {
+  box-shadow: 2px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 0 32px;
+  transition: ease 0.25s;
+}
+section.akademik .card:hover {
+  box-shadow: 4px 2px 12px 0px rgba(0, 0, 0, 0.1);
+}
+section.akademik img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+section.berita .media img {
+  height: 96px;
+}
+section.berita ul li.media {
+  margin-bottom: 18px;
+}
+
+/* end of Sections */
+
+/* Sub-Sections */
+.sub-section {
+  background-color: rgb(20, 71, 122);
+  padding: 56px 0;
+}
+.sub-section a.btn-custom {
+  font-size: 16px;
+  float: right;
+}
+
+.sub-section#stayconnected h1 {
+  color: rgb(243, 200, 4);
+}
+
+.sub-section#stayconnected a {
+  font-size: 48px;
+}
+
+.sub-section#stayconnected a.btn:hover {
+  color: rgb(243, 200, 4) !important;
+}
+/* end of Sub-Sections */
+
+/* Main Content */
+.main-content {
+  padding-top: 88px;
+}
+
+.main-content .col-md-8 {
+  height: 1024px;
+}
+
+.main-content .col-md-8,
+.main-content .col-md-4 {
+  padding: 0 48px;
+}
+.page-header .container {
+  position: relative;
+  background-color: rgb(20, 71, 122);
+}
+.page-header .row {
+  height: 240px;
+}
+.page-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  vertical-align: middle;
+}
+.page-header .col-md-4 {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 32px;
+  padding-bottom: 16px;
+}
+
+.page-header ol.breadcrumb li.breadcrumb-item a {
+  color: rgba(243, 200, 4, 0.8);
+  font-weight: 300;
+  text-decoration: none;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page-header ol.breadcrumb li.breadcrumb-item.active a {
+  color: rgba(243, 200, 4);
+  font-weight: 500;
+}
+
+.page-header ol.breadcrumb li.breadcrumb-item a:hover {
+  color: rgba(243, 200, 4);
+  font-weight: 500;
+}
+
+.berita-meta {
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+.berita-meta li.list-inline-item {
+  margin-right: 12px;
+}
+
+.berita-content {
+  font-size: 14px;
+}
+
+.berita-content p,
+.berita-content figure {
+  margin: 16px 0;
+}
+
+/* end of Main Content */
+
+/* Sidebar */
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul li {
+  color: rgb(20, 71, 122);
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  border-top: 1px solid rgb(243, 200, 4);
+  transition: 0.3s;
+}
+
+.sidebar ul li:hover {
+  transform: translateX(16px);
+}
+
+.sidebar ul li a {
+  color: rgb(20, 71, 122);
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: none;
+}
+
+.sidebar .heading {
+  margin-bottom: 24px;
+}
+
+.sidebar .accordion ul {
+  transition: 0.5s;
+}
+
+.sidebar .accordion ul li:hover {
+  background-color: #f3f3f3;
+  transform: none;
+}
+
+.sidebar .accordion ul.accordionParent li {
+  font-weight: 700;
+  border-top: 1px solid rgb(243, 200, 4);
+}
+
+.sidebar .accordion ul.accordionChild {
+  margin-left: 24px;
+}
+
+.sidebar .accordion ul.accordionChild li {
+  font-weight: 500;
+  border-top: 1px solid #ddd;
+
+  transition: 0.3s;
+}
+
+.sidebar .accordion ul.accordionChild li:hover {
+  transform: translateX(16px);
+}
+
+.sidebar .accordion ul.accordionChild li a:hover {
+  color: rgb(20, 71, 122);
+}
+/* end of Sidebar */
+
+/* Footer */
+footer {
+  background-color: rgb(20, 71, 122);
+  border-bottom: 16px solid rgb(243, 200, 4);
+}
+
+footer span {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+footer p,
+footer a {
+  color: #fff;
+  font-size: 12px;
+  margin: 0;
+}
+
+footer a:hover {
+  color: rgb(243, 200, 4);
+}
+
+footer .stayconnected a {
+  font-size: 24px;
+}
+
+footer .stayconnected a.btn:hover {
+  color: rgb(243, 200, 4) !important;
+}
+
+/* end of Footer */
